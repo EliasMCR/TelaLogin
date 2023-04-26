@@ -24,14 +24,13 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -60,12 +59,30 @@ form > div.campo {
     width: 100%;
     height: 40px;
     display: block;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 2px 0px;
 }
+
 div.campo > label {
     display: none;
 }
+div.campo > span {
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 2em;
+    padding: 5px;
+}
+div.campo > input {
+    width: calc(80% - 10px);
+    height: 88%;
+    background-color: yellowgreen;
+    border-radius: 8px;
+    padding: 10px;
+    border: 0px;
+    transform: translateY(-11px);
+}
+
 form > input[type=submit] {
     display: block;
     font-size: 1.2em;
@@ -101,4 +118,6 @@ form > a.botao:hover {
 }
 form > a.botao > span {
     font-size: 1.2em;
+    padding-left: 10px;
+    transform: translateY(+7px);
 }
